@@ -1,4 +1,4 @@
-package me.desht.landslide.commands;
+package me.pv5mc.landslide.commands;
 
 /*
 This file is part of Landslide
@@ -20,9 +20,9 @@ along with Landslide.  If not, see <http://www.gnu.org/licenses/>.
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.Plugin;
 
-import me.desht.dhutils.MiscUtil;
-import me.desht.dhutils.commands.AbstractCommand;
-import me.desht.landslide.LandslidePlugin;
+import me.pv5mc.dhutils.MiscUtil;
+import me.pv5mc.dhutils.commands.AbstractCommand;
+import me.pv5mc.landslide.LandslidePlugin;
 
 public class ReloadCommand extends AbstractCommand {
 

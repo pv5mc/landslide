@@ -1,4 +1,4 @@
-package me.desht.landslide;
+package me.pv5mc.landslide;
 
 import com.sk89q.worldguard.bukkit.WGBukkit;
 import com.sk89q.worldguard.protection.flags.DefaultFlag;

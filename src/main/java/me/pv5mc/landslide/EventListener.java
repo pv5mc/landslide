@@ -1,24 +1,5 @@
-package me.desht.landslide;
+package me.pv5mc.landslide;
 
-/*
-This file is part of Landslide
-
-Landslide is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-Landslide is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with Landslide.  If not, see <http://www.gnu.org/licenses/>.
- */
-
-import me.desht.dhutils.Debugger;
-import me.desht.dhutils.MiscUtil;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.Sound;
@@ -39,6 +20,9 @@ import org.bukkit.event.player.PlayerItemHeldEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.material.MaterialData;
 import org.bukkit.util.Vector;
+
+import me.pv5mc.dhutils.Debugger;
+import me.pv5mc.dhutils.MiscUtil;
 
 import java.util.Random;
 

@@ -1,4 +1,4 @@
-package me.desht.landslide;
+package me.pv5mc.landslide;
 
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;

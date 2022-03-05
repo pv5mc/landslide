@@ -1,4 +1,4 @@
-package me.desht.landslide.commands;
+package me.pv5mc.landslide.commands;
 
 /*
 This file is part of Landslide
@@ -17,40 +17,38 @@ You should have received a copy of the GNU General Public License
 along with Landslide.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import org.bukkit.block.Block;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 
-import me.desht.dhutils.DHUtilsException;
-import me.desht.dhutils.commands.AbstractCommand;
+import me.pv5mc.dhutils.DHUtilsException;
+import me.pv5mc.dhutils.DHValidate;
+import me.pv5mc.dhutils.commands.AbstractCommand;
+import me.pv5mc.landslide.SlideOTron;
 
-public class KaboomCommand extends AbstractCommand {
+public class PowerCommand extends AbstractCommand {
 
-    public KaboomCommand() {
-        super("landslide kaboom", 0, 1);
-        setPermissionNode("landslide.commands.kaboom");
-        setUsage("/<command> kaboom [<power-level>]");
+    public PowerCommand() {
+        super("landslide power", 1, 1);
+        setPermissionNode("landslide.commands.power");
+        setUsage("/<command> power <power-level>");
     }
 
     @Override
     public boolean execute(Plugin plugin, CommandSender sender, String[] args) {
         notFromConsole(sender);
 
-        float power;
-        if (args.length == 0) {
-            power = 4.0f;
-        } else {
-            try {
-                power = Float.parseFloat(args[0]);
-            } catch (NumberFormatException e) {
-                throw new DHUtilsException("invalid numeric argument: " + args[0]);
-            }
-        }
-
         Player player = (Player) sender;
-        Block b = player.getTargetBlock(null, 140);
-        player.getWorld().createExplosion(b.getLocation(), power);
+        SlideOTron wand = SlideOTron.getWand(player);
+        DHValidate.notNull(wand, "You are not holding a Slide-O-Tron wand");
+
+        try {
+            int power = Integer.parseInt(args[0]);
+            wand.setPower(power);
+            player.setItemInHand(wand.toItemStack(player.getItemInHand().getAmount()));
+        } catch (NumberFormatException e) {
+            throw new DHUtilsException("Invalid numeric quantity: " + args[0]);
+        }
 
         return true;
     }

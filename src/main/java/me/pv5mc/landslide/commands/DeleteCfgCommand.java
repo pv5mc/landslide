@@ -1,4 +1,4 @@
-package me.desht.landslide.commands;
+package me.pv5mc.landslide.commands;
 /*
 This file is part of Landslide
 
@@ -19,14 +19,14 @@ along with Landslide.  If not, see <http://www.gnu.org/licenses/>.
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import me.desht.dhutils.ConfigurationManager;
-import me.desht.dhutils.DHUtilsException;
-import me.desht.dhutils.MiscUtil;
-import me.desht.dhutils.commands.AbstractCommand;
-import me.desht.landslide.LandslidePlugin;
-
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.Plugin;
+
+import me.pv5mc.dhutils.ConfigurationManager;
+import me.pv5mc.dhutils.DHUtilsException;
+import me.pv5mc.dhutils.MiscUtil;
+import me.pv5mc.dhutils.commands.AbstractCommand;
+import me.pv5mc.landslide.LandslidePlugin;
 
 public class DeleteCfgCommand extends AbstractCommand {
 

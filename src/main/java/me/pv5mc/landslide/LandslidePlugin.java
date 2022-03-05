@@ -1,4 +1,4 @@
-package me.desht.landslide;
+package me.pv5mc.landslide;
 
 /*
     This file is part of Landslide
@@ -17,14 +17,11 @@ package me.desht.landslide;
     along with Landslide.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import com.comphenix.protocol.ProtocolLibrary;
 import com.sk89q.worldguard.bukkit.WorldGuardPlugin;
 import com.sk89q.worldguard.protection.flags.DefaultFlag;
 import com.sk89q.worldguard.protection.flags.Flag;
 import com.sk89q.worldguard.protection.flags.StateFlag;
-import me.desht.dhutils.*;
-import me.desht.dhutils.commands.CommandManager;
-import me.desht.landslide.commands.*;
+
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
@@ -34,7 +31,8 @@ import org.bukkit.material.MaterialData;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.mcstats.MetricsLite;
+
+import me.pv5mc.landslide.commands.*;
 
 import java.io.IOException;
 import java.util.List;

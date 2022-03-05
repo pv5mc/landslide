@@ -1,4 +1,4 @@
-package me.desht.landslide;
+package me.pv5mc.landslide;
 
 /*
 This file is part of Landslide
@@ -25,12 +25,6 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import me.desht.dhutils.ItemGlow;
-import me.desht.dhutils.MiscUtil;
-import me.desht.dhutils.ParticleEffect;
-import me.desht.dhutils.cuboid.Cuboid;
-import me.desht.dhutils.cuboid.Cuboid.CuboidDirection;
-
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Effect;
@@ -43,6 +37,12 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.util.BlockIterator;
+
+import me.pv5mc.dhutils.ItemGlow;
+import me.pv5mc.dhutils.MiscUtil;
+import me.pv5mc.dhutils.ParticleEffect;
+import me.pv5mc.dhutils.cuboid.Cuboid;
+import me.pv5mc.dhutils.cuboid.Cuboid.CuboidDirection;
 
 public class SlideOTron {
     private static final String DISPLAY_PREFIX = ChatColor.YELLOW + "Slide-O-Tron\u2122: " + ChatColor.GOLD;

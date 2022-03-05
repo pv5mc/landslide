@@ -1,4 +1,4 @@
-package me.desht.landslide.commands;
+package me.pv5mc.landslide.commands;
 /*
 This file is part of Landslide
 
@@ -22,15 +22,15 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import me.desht.dhutils.DHUtilsException;
-import me.desht.dhutils.MessagePager;
-import me.desht.dhutils.MiscUtil;
-import me.desht.dhutils.commands.AbstractCommand;
-
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.Configuration;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.plugin.Plugin;
+
+import me.pv5mc.dhutils.DHUtilsException;
+import me.pv5mc.dhutils.MessagePager;
+import me.pv5mc.dhutils.MiscUtil;
+import me.pv5mc.dhutils.commands.AbstractCommand;
 
 public class GetcfgCommand extends AbstractCommand {
 

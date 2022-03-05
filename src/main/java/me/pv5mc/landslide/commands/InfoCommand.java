@@ -1,4 +1,4 @@
-package me.desht.landslide.commands;
+package me.pv5mc.landslide.commands;
 
 /*
 This file is part of Landslide
@@ -20,13 +20,6 @@ along with Landslide.  If not, see <http://www.gnu.org/licenses/>.
 import java.util.HashMap;
 import java.util.Map;
 
-import me.desht.dhutils.DHValidate;
-import me.desht.dhutils.MessagePager;
-import me.desht.dhutils.MiscUtil;
-import me.desht.dhutils.commands.AbstractCommand;
-import me.desht.landslide.LandslidePlugin;
-import me.desht.landslide.PerWorldConfiguration;
-
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.World;
@@ -35,6 +28,13 @@ import org.bukkit.configuration.Configuration;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
+
+import me.pv5mc.dhutils.DHValidate;
+import me.pv5mc.dhutils.MessagePager;
+import me.pv5mc.dhutils.MiscUtil;
+import me.pv5mc.dhutils.commands.AbstractCommand;
+import me.pv5mc.landslide.LandslidePlugin;
+import me.pv5mc.landslide.PerWorldConfiguration;
 
 public class InfoCommand extends AbstractCommand {
 
